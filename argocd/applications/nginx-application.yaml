@@ -6,7 +6,7 @@ metadata:
 spec:
   project: demo-project
   source:
-    repoURL: https://github.com/YOUR_USERNAME/argocd-app-config
+    repoURL: https://github.com/mdsraihaniqbal1999/argocd-app-config.git
     targetRevision: main
     path: apps/nginx-demo
   destination:

@@ -6,7 +6,7 @@ metadata:
 spec:
   description: Demo project for nginx applications
   sourceRepos:
-  - https://github.com/YOUR_USERNAME/argocd-app-config
+  - https://github.com/mdsraihaniqbal1999/argocd-app-config.git
   destinations:
   - namespace: default
     server: https://kubernetes.default.svc
