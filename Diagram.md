@@ -1,4 +1,4 @@
-`````
+```mermaid
 flowchart TD
     A[User Initiates Sync<br/>UI/CLI/API] --> B{Authentication &<br/>Authorization}
     B -->|Success| C
@@ -122,4 +122,4 @@ flowchart TD
     style U fill:#f3e5f5,stroke:#9c27b0,stroke-width:2px
     style AE fill:#f3e5f5,stroke:#9c27b0,stroke-width:2px
 
-`````
+```
