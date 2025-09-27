@@ -14,11 +14,31 @@ spec:
   - group: ''
     kind: Namespace
   namespaceResourceWhitelist:
+  # Core Kubernetes resources
   - group: ''
     kind: ConfigMap
   - group: ''
     kind: Secret
   - group: ''
     kind: Service
+  - group: ''
+    kind: Pod
+  - group: ''
+    kind: Endpoints
+  - group: ''
+    kind: Event
+  - group: ''
+    kind: ServiceAccount
+  # Apps resources (THIS WAS THE KEY MISSING PIECE)
   - group: apps
     kind: Deployment
+  - group: apps
+    kind: ReplicaSet  # ← This was missing and causing your issue!
+  # Networking resources (if you use ingress later)
+  - group: networking.k8s.io
+    kind: Ingress
+  - group: networking.k8s.io
+    kind: NetworkPolicy
+  # Autoscaling (if you use HPA later)
+  - group: autoscaling
+    kind: HorizontalPodAutoscaler
