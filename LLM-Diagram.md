@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
     Start["Step-by-Step Request Flow"]
 
@@ -63,3 +64,5 @@ flowchart TD
     end
 
     Step6 --> End["Return to Client"]
+
+```
